@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="row">
+	<div style="background-color: green; height: 100px; width: 100px;" class="border cel"></div>
+	<div style="background-color: green; height: 100px; width: 100px;" class="border cel"></div>
+	<div style="background-color: green; height: 100px; width: 100px;" class="border cel"></div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+	let rand = Math.random()*2
+	let round = Math.round(rand)
+	let cells = document.querySelectorAll(".cel")
+	cells[round].key = "random"
+		for(let index = 0; index<3; index = index + 1){
+			cells[index].onclick = function(){
+				if( cells[index].key == "random"){
+					alert("ты угадал")
+				}
+				else{
+					alert(" ты не угадал")
+				}
+
+			}
+		}
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
